@@ -1,0 +1,31 @@
+@import '../_variables.sass'
+
+.HeaderComponent
+  z-index: 10
+  background: $header
+  color: #232323
+  width: 100%
+  position: fixed
+  left: 0
+  top: 0
+  height: 60px
+  padding: 0 5%
+  border-bottom: 1px solid #333333
+  .title
+    display: inline-block
+    font-size: 36px
+    line-height: 45px
+    margin-top: 5px
+  .nav-links
+    .nav-link
+      padding: 9px 20px
+      line-height: 60px
+      border-bottom: 4px solid #FFFFFF
+      font-size: 20px
+      &:hover
+        &:nth-child(1)
+          border-bottom: 4px solid $green
+        &:nth-child(2)
+          border-bottom: 4px solid $blue
+        &:nth-child(3)
+          border-bottom: 4px solid $orange
