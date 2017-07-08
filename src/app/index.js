@@ -2,8 +2,6 @@ import React, {Component} from 'react';
 import classnames from 'classnames';
 import {browserHistory} from 'react-router';
 import Header from '../header';
-import Loading from '../loading';
-import Modal from '../modals';
 
 class App extends Component {
 
@@ -15,8 +13,6 @@ class App extends Component {
                     { this.props.children }
                 </main>
                 <Header />
-                <Loading />
-                <Modal/>
             </div>
         );
     }

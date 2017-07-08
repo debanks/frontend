@@ -1,9 +1,5 @@
 import React, {Component, PropTypes} from 'react';
 import classnames from 'classnames';
-import FaSignOut from 'react-icons/lib/fa/sign-out';
-import DropdownButton from 'react-bootstrap/lib/DropdownButton';
-import MenuItem from 'react-bootstrap/lib/MenuItem';
-import Button from 'react-bootstrap/lib/Button';
 
 class HomeComponent extends Component {
 
