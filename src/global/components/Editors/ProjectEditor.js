@@ -358,7 +358,10 @@ class ProjectEditor extends Component {
                                 </FormControl>
                             </div>
 
-                            <Button onClick={(e) => this.props.close()}>Close</Button>
+                            <Button onClick={(e) => {
+                                e.preventDefault();
+                                this.props.editorHide()
+                            }}>Close</Button>
                             <Button onClick={(e) => this.submit(e)}>Submit</Button>
                         </Col>
                     </Row>

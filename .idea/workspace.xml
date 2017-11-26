@@ -28,11 +28,21 @@
       <file leaf-file-name="ArticleEditor.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/global/components/Editors/ArticleEditor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-82">
-              <caret line="134" column="41" lean-forward="false" selection-start-line="134" selection-start-column="41" selection-end-line="134" selection-end-column="41" />
+            <state relative-caret-position="337">
+              <caret line="272" column="30" lean-forward="false" selection-start-line="272" selection-start-column="30" selection-end-line="272" selection-end-column="30" />
               <folding>
                 <element signature="e#6811#9832#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProjectEditor.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/global/components/Editors/ProjectEditor.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret line="359" column="0" lean-forward="true" selection-start-line="359" selection-start-column="0" selection-end-line="359" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -41,28 +51,20 @@
         <entry file="file://$PROJECT_DIR$/src/content/index.sass">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="290">
-              <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+              <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gameBox.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gaming/components/gameBox.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameEditor.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GameEditor.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/global/components/Editors/GameEditor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-357">
-              <caret line="104" column="23" lean-forward="true" selection-start-line="104" selection-start-column="23" selection-end-line="104" selection-end-column="23" />
-              <folding />
+            <state relative-caret-position="530">
+              <caret line="376" column="30" lean-forward="false" selection-start-line="376" selection-start-column="30" selection-end-line="376" selection-end-column="30" />
+              <folding>
+                <element signature="e#10122#13142#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -221,7 +223,6 @@
         <option value="$PROJECT_DIR$/src/api/ApiService.js" />
         <option value="$PROJECT_DIR$/src/gaming/index.sass" />
         <option value="$PROJECT_DIR$/src/global/components/Editors/index.sass" />
-        <option value="$PROJECT_DIR$/src/global/components/Editors/ProjectEditor.js" />
         <option value="$PROJECT_DIR$/src/programming/index.sass" />
         <option value="$PROJECT_DIR$/src/programming/components/Project.js" />
         <option value="$PROJECT_DIR$/src/global/components/Content/index.sass" />
@@ -244,9 +245,10 @@
         <option value="$PROJECT_DIR$/scripts/build.js" />
         <option value="$PROJECT_DIR$/src/routes.js" />
         <option value="$PROJECT_DIR$/src/global/components/Footer/Footer.js" />
-        <option value="$PROJECT_DIR$/src/global/components/Editors/ArticleEditor.js" />
         <option value="$PROJECT_DIR$/src/content/index.sass" />
         <option value="$PROJECT_DIR$/src/global/components/Editors/GameEditor.js" />
+        <option value="$PROJECT_DIR$/src/global/components/Editors/ArticleEditor.js" />
+        <option value="$PROJECT_DIR$/src/global/components/Editors/ProjectEditor.js" />
       </list>
     </option>
   </component>
@@ -550,12 +552,12 @@
       <workItem from="1511370731271" duration="22298000" />
       <workItem from="1511456826394" duration="4131000" />
       <workItem from="1511556033112" duration="14962000" />
-      <workItem from="1511634635245" duration="24890000" />
+      <workItem from="1511634635245" duration="25557000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116299000" />
+    <option name="totallyTimeSpent" value="116966000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1771" y="101" width="1707" height="937" extended-state="0" />
@@ -751,16 +753,6 @@
         <state relative-caret-position="323">
           <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/global/components/Editors/ProjectEditor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="241" column="34" lean-forward="false" selection-start-line="241" selection-start-column="34" selection-end-line="241" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1026,20 +1018,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/global/components/Editors/ArticleEditor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-82">
-          <caret line="134" column="41" lean-forward="false" selection-start-line="134" selection-start-column="41" selection-end-line="134" selection-end-column="41" />
-          <folding>
-            <element signature="e#6811#9832#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/content/index.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
-          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1054,8 +1036,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/global/components/Editors/GameEditor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
-          <caret line="104" column="23" lean-forward="true" selection-start-line="104" selection-start-column="23" selection-end-line="104" selection-end-column="23" />
+        <state relative-caret-position="530">
+          <caret line="376" column="30" lean-forward="false" selection-start-line="376" selection-start-column="30" selection-end-line="376" selection-end-column="30" />
+          <folding>
+            <element signature="e#10122#13142#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/global/components/Editors/ArticleEditor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="272" column="30" lean-forward="false" selection-start-line="272" selection-start-column="30" selection-end-line="272" selection-end-column="30" />
+          <folding>
+            <element signature="e#6811#9832#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/global/components/Editors/ProjectEditor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="359" column="0" lean-forward="true" selection-start-line="359" selection-start-column="0" selection-end-line="359" selection-end-column="0" />
           <folding />
         </state>
       </provider>

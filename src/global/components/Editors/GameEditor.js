@@ -143,7 +143,7 @@ class GameEditor extends Component {
             game.large_image_url = this.props.image_two;
         }
 
-        if (!this.state.currently_playing || this.state.currently_playing === '') {
+        if (this.state.currently_playing === null || this.state.currently_playing === '') {
             errorMessage += 'Playing must be filled in. ';
         } else {
             game.currently_playing = this.state.currently_playing;
@@ -371,7 +371,10 @@ class GameEditor extends Component {
                                 </FormControl>
                             </div>
 
-                            <Button onClick={(e) => this.props.close()}>Close</Button>
+                            <Button onClick={(e) => {
+                                e.preventDefault();
+                                this.props.editorHide()
+                            }}>Close</Button>
                             <Button onClick={(e) => this.submit(e)}>Submit</Button>
                         </Col>
                     </Row>
