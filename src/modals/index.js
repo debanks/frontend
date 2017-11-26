@@ -8,7 +8,7 @@ import './index.sass';
 
 function mapStateToProps(state) {
     return {
-        user: state.auth.user,
+        user: state.header.user,
         showUserModal: state.modal.showUserModal
     }
 }

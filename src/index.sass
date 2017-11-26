@@ -2,8 +2,9 @@
 @import '_mixins.scss'
 @import '_variables.sass'
 
-html,body
+html,body,#root
   min-height: 100%
+  height: 100%
 
 body
   margin: 0
@@ -29,14 +30,23 @@ body
   -moz-animation: wiggle 2s linear infinite
   animation: wiggle 2s linear infinite
 
+.container
+  width: 100%
+
 a:hover
   text-decoration: none !important
+
+#root > div
+  position: relative
+  min-height: 100%
+  padding-bottom: 300px
+
 
 .numbers
   font-family: 'Nunito Sans'
 
 .main-component
-  padding: 60px 0 20px 0
+  padding: 41px 0 0 0
   .content
     padding: 20px 3%
 
@@ -64,24 +74,6 @@ a
 
 .clickable
   cursor: pointer
-
-.records
-  border-radius: 3px
-  color: $text-grey
-  border: 1px solid $grey-border
-  .records-header
-    border-bottom: 2px solid $grey-border
-    color: #ffffff
-    font-size: 18px
-    font-weight: 700
-    padding: 5px 15px
-  .record
-    padding: 5px 0px
-    border-bottom: 1px solid $grey-border
-    display: block
-    width: 100%
-    &:hover
-      background: $record-hover
 
 .strobe-red
   -webkit-animation: strobe-red 4s linear infinite

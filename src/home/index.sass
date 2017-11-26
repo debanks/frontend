@@ -1,14 +1,137 @@
 @import '../_variables.sass'
 
 .HomeComponent
-  .about
-    background: #232323
-    color: #f8f8f8
-    .gravatar
-      height: 120px
-      border-radius: 60px
-    .text
-      text-align: center
-      font-size: 16px
-      line-height: 24px
-      padding-top: 20px
+  .home-banner
+    position: relative
+    overflow: hidden
+    > img
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      z-index: 0
+    .banner-content
+      width: 100%
+      z-index: 3
+      background: rgba(0,0,0,.6)
+      position: relative
+      padding: 30px 5%
+      .home-text
+        padding-top: 60px
+        color: #f2f2f2
+        margin-bottom: 20px
+        h2
+          font-size: 38px
+        p
+          font-size: 24px
+          color: #f2f2f2
+      .learn-more-btn
+        font-size: 18px
+        padding: 10px 20px
+        margin-bottom: 30px
+  .home-skills
+    color: #ffffff
+    .skill-tabs
+      background: rgba(0,0,0,.3)
+      padding: 0 5%
+      .skill
+        padding: 7px 20px
+        margin-left: -1px
+        display: inline-block
+        font-size: 18px
+        cursor: pointer
+    .skill-container
+      padding: 80px 5%
+      h2
+        margin-top: 0
+        margin-bottom: 2px
+        font-size: 36px
+      p
+        font-size: 22px
+        line-height: 32px
+      .experience
+        color: #d9d9d9
+        font-size: 16px
+      .skill-project
+        font-size: 16px
+    &.all
+      background: #062f4f
+      .skill-tabs
+        border-bottom: 1px solid #063f5f
+        .skill
+          border-left: 1px solid #063f5f
+          border-right: 1px solid #063f5f
+          &.active
+            background: #064f6f
+    &.react
+      background: #282c34
+      .skill-tabs
+        border-bottom: 1px solid #383c44
+        .skill
+          border-left: 1px solid #383c44
+          border-right: 1px solid #383c44
+          &.active
+            background: #484c54
+    &.php
+      background: #4F5B93
+      .skill-tabs
+        border-bottom: 1px solid #5F6Ba3
+        .skill
+          border-left: 1px solid #5F6Ba3
+          border-right: 1px solid #5F6Ba3
+          &.active
+            background: #6F7Bb3
+    &.database
+      background: #f29221
+      .skill-tabs
+        border-bottom: 1px solid #f2a231
+        .skill
+          border-left: 1px solid #f2a231
+          border-right: 1px solid #f2a231
+          &.active
+            background: #f2b241
+    &.angular
+      background: #dd1b16
+      .skill-tabs
+        border-bottom: 1px solid #ed2b26
+        .skill
+          border-left: 1px solid #ed2b26
+          border-right: 1px solid #ed2b26
+          &.active
+            background: #fd3b36
+    &.python
+      background: #2b5b84
+      .skill-tabs
+        border-bottom: 1px solid #3b6b94
+        .skill
+          border-left: 1px solid #3b6b94
+          border-right: 1px solid #3b6b94
+          &.active
+            background: #4b7ba4
+    &.it
+      background: #0B823E
+      .skill-tabs
+        border-bottom: 1px solid #1B924E
+        .skill
+          border-left: 1px solid #1B924E
+          border-right: 1px solid #1B924E
+          &.active
+            background: #2Ba25E
+  .education
+    background: #0B823E
+    color: #ffffff
+    padding: 80px 5%
+    img
+      width: 100%
+    p
+      font-size: 14px
+    h1
+      margin-top: 0
+    .description
+      font-size: 20px
+      line-height: 30px
+      margin-top: 15px
+
+
+

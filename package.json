@@ -1,5 +1,5 @@
 {
-  "name": "call-center-ui",
+  "name": "website-frontend",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -47,7 +47,14 @@
     "webpack": "1.14.0",
     "webpack-dev-server": "1.16.2",
     "webpack-manifest-plugin": "1.1.0",
-    "whatwg-fetch": "1.0.0"
+    "whatwg-fetch": "1.0.0",
+    "react-linkify": "*",
+    "draft-js": "*",
+    "draftjs-to-html": "*",
+    "html-to-draftjs": "*",
+    "react-draft-wysiwyg": "*",
+    "react-ga": "*",
+    "react-document-meta": "2.1.2"
   },
   "dependencies": {
     "bootstrap": "*",
@@ -70,7 +77,10 @@
     "redux-logger": "^2.7.4",
     "redux-promise-middleware": "^4.1.0",
     "redux-thunk": "^2.1.0",
-    "redux-saga": "*"
+    "redux-saga": "*",
+    "react-stockcharts": "0.6.1",
+    "react-stars": "2.2.5",
+    "dompurify": "*"
   },
   "scripts": {
     "start": "node scripts/start.js",

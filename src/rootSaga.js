@@ -1,14 +1,24 @@
 import { fork } from 'redux-saga/effects'
-import loginSaga from './login/loginSaga';
 import headerSaga from './header/headerSaga';
 import modalSaga from './modals/modalSaga';
+import homeSaga from './home/homeSaga';
+import globalSaga from './global/globalSaga';
+import contentSaga from './content/contentSaga';
+import programmingSaga from './programming/programmingSaga';
+import gamingSaga from './gaming/gamingSaga';
+import apiSaga from './api/apiSaga';
 
-function* parrotSaga() {
+function* frontendSaga() {
   yield [
-      fork(loginSaga),
       fork(headerSaga),
-      fork(modalSaga)
+      fork(modalSaga),
+      fork(homeSaga),
+      fork(globalSaga),
+      fork(gamingSaga),
+      fork(programmingSaga),
+      fork(contentSaga),
+      fork(apiSaga)
   ];
 }
 
-export default parrotSaga;
+export default frontendSaga;

@@ -1,31 +1,103 @@
 @import '../_variables.sass'
 
 .HeaderComponent
-  z-index: 10
-  background: $header
-  color: #232323
-  width: 100%
-  position: fixed
-  left: 0
-  top: 0
-  height: 60px
-  padding: 0 5%
-  border-bottom: 1px solid #333333
-  .title
-    display: inline-block
-    font-size: 36px
-    line-height: 45px
-    margin-top: 5px
-  .nav-links
-    .nav-link
-      padding: 9px 20px
-      line-height: 60px
-      border-bottom: 4px solid #FFFFFF
-      font-size: 20px
+  .navbar
+    z-index: 12
+    background: $header
+    color: #f7f7f7
+    width: 100%
+    position: fixed
+    left: 0
+    top: 0
+    height: 41px
+    min-height: 41px
+    border-radius: 0
+    border: 0
+    border-bottom: 1px solid $accent
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.4)
+    .login
+      position: relative
+      .login-container
+        position: absolute
+        top: 100%
+        right: 0
+        background: $darkAccent
+        border-left: 1px solid $header
+        border-bottom: 1px solid $header
+        border-right: 1px solid $header
+        padding: 20px
+        input
+          width: 300px
+          padding: 5px
+          color: #000000
+          margin-bottom: 5px
+        .btn
+          width: 100%
+    .ThoughtComponent
+      border-top: 1px solid $accent
+      background: $header
+      margin: 0 -15px
+      padding: 10px 3%
+      width: auto
+      textarea
+        color: #121212
+    .close-nav
+      margin-left: 30px
+    .navbar-nav > li > a
+      line-height: 40px
+      font-size: 14px
+      box-sizing: border-box
+      color: #f7f7f7
+      padding: 0 15px
+      margin-left: -1px
+      border-left: 1px solid $accent
+      border-right: 1px solid $accent
+      &:focus
+        color: #f7f7f7
+        background: $header
+      &:hover, &:active, &.active
+        background: $darkAccent
+        color: #ffffff
+      .navbar-nav > li.active > a
+        background: $darkAccent
+    .navbar-nav > li.active > a
+      background: $darkAccent
+      color: #ffffff
+    .no-divider
+      li > a
+        border-left: 0
+        border-right: 0
+      .btn
+        margin-top: 4px
+        margin-right: 10px
+        padding: 5px 10px
+        color: #000000
+        @media screen and (max-width: 400px)
+          width: 90%
+          margin-left: 5%
+    .user-icon
+      height: 20px
+      border-radius: 50%
+    .navbar-brand
+      font-size: 28px
+      margin-left: 10px !important
+      line-height: 40px
+      height: 38px
+      color: #f2f2f2
+      padding: 0
+      img
+        height: 35px
+        width: 35px
+        border-radius: 50%
+        display: inline-block
+        margin-top: -4px
       &:hover
-        &:nth-child(1)
-          border-bottom: 4px solid $green
-        &:nth-child(2)
-          border-bottom: 4px solid $blue
-        &:nth-child(3)
-          border-bottom: 4px solid $orange
+        color: #ffffff
+      &:active
+        color: #ffffff
+    .navbar-collapse
+      background: $header
+    .navbar-toggle
+      margin-top: 2px
+      margin-bottom: 2px
+      color: #f2f2f2

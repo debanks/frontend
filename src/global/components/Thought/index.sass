@@ -1,0 +1,54 @@
+.ThoughtComponent
+  width: 94%
+  margin: 10px 3%
+  textarea
+    height: 60px
+    padding: 10px
+    width: 100%
+    border-radius: 10px
+    outline: none
+    resize: none
+    &.active
+      height: 120px
+  .thought-buttons
+    .btn
+      margin-right: 5px
+  .characters
+    color: #f2f2f2
+    margin-right: 10px
+  .coin-select
+    display: inline-block
+    margin-left: 10px
+  .form-control
+    width: auto
+  .thought-image
+    border-radius: 0 !important
+    height: 100px !important
+  .spin
+    color: #ffffff
+    font-size: 20px
+  .right-aligned
+    float: right
+    @media screen and (max-width: 520px)
+      float: none
+      margin-top: 10px
+      text-align: right
+.Thought
+  background: rgba(0,0,0,.3)
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 5
+  .thought-container
+    background: #ffffff
+    border: 1px solid #999999
+    box-shadow: #777 0 4px 8px, #777 0 0 0 1px
+    margin: 100px auto
+    min-width: 300px
+    max-width: 50%
+    overflow: auto
+    img
+      height: auto
+      max-height: 600px !important

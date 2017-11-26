@@ -1,14 +1,15 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {connect} from 'react-redux';
-import {bindActionCreators} from 'redux';
 import HeaderComponent from './components/headerComponent';
-var DocumentTitle = require('react-document-title');
-import {requestLogout} from './actions';
+import {requestLogout, loginUser, requestItems} from './actions';
+import {showEditor} from '../global/actions';
 import './index.sass';
 
 function mapStateToProps(state) {
     return {
-        user: state.auth.user
+        user: state.header.user,
+        items: state.header.items,
+        show: state.global.show
     }
 }
 
@@ -16,6 +17,16 @@ function mapDispatchToProps(dispatch) {
     return {
         handleLogout: () => {
             dispatch(requestLogout())
+        },
+        login: (e, creds) => {
+            e.preventDefault();
+            dispatch(loginUser(creds));
+        },
+        getItems: () => {
+            dispatch(requestItems());
+        },
+        editorShow: (editor) => {
+            dispatch(showEditor(editor, false, false, false));
         }
     }
 }

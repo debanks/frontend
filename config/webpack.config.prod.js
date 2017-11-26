@@ -225,23 +225,7 @@ module.exports = {
       'process.env': {
           NODE_ENV: JSON.stringify(process.env.NODE_ENV),
           URL: JSON.stringify(process.env.URL),
-          API_URL: JSON.stringify(process.env.API_URL),
-          QBO_URL: JSON.stringify(process.env.QBO_URL),
-          REPORT_ID_CUSTOMERS_NOT_SENT: JSON.stringify(process.env.REPORT_ID_CUSTOMERS_NOT_SENT),
-          REPORT_ID_CUSTOMERS_NOT_INVOICED: JSON.stringify(process.env.REPORT_ID_CUSTOMERS_NOT_INVOICED),
-          REPORT_ID_CUSTOMERS_NOT_PAID_FULLY: JSON.stringify(process.env.REPORT_ID_CUSTOMERS_NOT_PAID_FULLY),
-          REPORT_ID_VENDORS_NOT_BILLED: JSON.stringify(process.env.REPORT_ID_VENDORS_NOT_BILLED),
-          REPORT_ID_VENDORS_NOT_PAID_FULLY: JSON.stringify(process.env.REPORT_ID_VENDORS_NOT_PAID_FULLY),
-          REPORT_ID_VENDORS_OVERDUE: JSON.stringify(process.env.REPORT_ID_VENDORS_OVERDUE),
-          REPORT_ID_VENDORS_NOT_PAID: JSON.stringify(process.env.REPORT_ID_VENDORS_NOT_PAID),
-          REPORT_ID_CUSTOMER_OVERDUE: JSON.stringify(process.env.REPORT_ID_CUSTOMER_OVERDUE),
-          REPORT_ID_OUTSTANDING: JSON.stringify(process.env.REPORT_ID_OUTSTANDING),
-          REPORT_ID_VENDORS_UPCOMING: JSON.stringify(process.env.REPORT_ID_VENDORS_UPCOMING),
-          REPORT_ID_INVOICES_NOT_PAID: JSON.stringify(process.env.REPORT_ID_INVOICES_NOT_PAID),
-          REPORT_ID_INVOICES_DUE_TODAY: JSON.stringify(process.env.REPORT_ID_INVOICES_DUE_TODAY),
-          REPORT_ID_INVOICES_ALLTIME_OVERDUE: JSON.stringify(process.env.REPORT_ID_INVOICES_ALLTIME_OVERDUE),
-          REPORT_ID_INVOICES_ALLTIME_UNDER_PAID: JSON.stringify(process.env.REPORT_ID_INVOICES_ALLTIME_UNDER_PAID),
-          REPORT_ID_INVOICES_ALLTIME_UNSENT: JSON.stringify(process.env.REPORT_ID_INVOICES_ALLTIME_UNSENT)
+          API_URL: JSON.stringify(process.env.API_URL)
       }
     }),
     // This helps ensure the builds are consistent if source hasn't changed:

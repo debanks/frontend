@@ -1,8 +1,6 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {connect} from 'react-redux';
-import {bindActionCreators} from 'redux';
 import LoadingComponent from './components/loadingComponent';
-var DocumentTitle = require('react-document-title');
 import './index.sass';
 
 function mapStateToProps(state) {

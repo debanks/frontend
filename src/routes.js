@@ -3,8 +3,13 @@ import React from 'react';
 import {Router, Route} from 'react-router';
 
 import App from './app';
-import Login from './login';
 import Home from './home';
+import Content from './content';
+import Gaming from './gaming';
+import Programming from './programming';
+import Game from './gaming/components/Game';
+import Project from './programming/components/Project';
+import Article from './content/components/Article';
 
 /**
  * Checks if user is logged in, if not shifts to login page
@@ -24,8 +29,13 @@ function requireAuth(nextState, replace) {
 const Routes = (props) => (
     <Router {...props}>
         <Route component={App}>
-            <Route path="/" component={Home} onEnter={requireAuth}/>
-            <Route path="/login" component={Login}/>
+            <Route path="/" component={Home}/>
+            <Route path="/game" component={Gaming}/>
+            <Route path="/game/:id/:name" component={Game}/>
+            <Route path="/programming" component={Programming}/>
+            <Route path="/programming/:name" component={Project}/>
+            <Route path="/content" component={Content}/>
+            <Route path="/content/:id/:title" component={Article}/>
         </Route>
     </Router>
 );

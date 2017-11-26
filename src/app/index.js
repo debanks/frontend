@@ -1,20 +1,19 @@
 import React, {Component} from 'react';
-import classnames from 'classnames';
-import {browserHistory} from 'react-router';
 import Header from '../header';
 import Loading from '../loading';
 import Modal from '../modals';
+import Footer from '../global/components/Footer/Footer';
 
 class App extends Component {
 
     render() {
-        const {...props} = this.props;
         return (
             <div>
                 <main className="main-component">
                     { this.props.children }
                 </main>
-                <Header />
+                <Footer/>
+                <Header location={this.props.location.pathname} />
                 <Loading />
                 <Modal/>
             </div>
