@@ -37,7 +37,7 @@ class GameEditor extends Component {
             currently_playing: this.props.game ? this.props.game.currently_playing : 0,
             playtime: this.props.game ? this.props.game.playtime : 0,
             time_to_beat: this.props.game ? this.props.game.time_to_beat : 0,
-            score: this.props.game ? this.props.game.score : "",
+            score: this.props.game ? this.props.game.score : 0,
             system: this.props.game ? this.props.game.system : "",
             release_date: this.props.game ? this.props.game.release_date : "",
             item: this.props.game && this.props.game.item_type ? this.props.game.item_type + '_' + this.props.game.item_id : '',
@@ -107,7 +107,7 @@ class GameEditor extends Component {
         const value = target.type === 'checkbox' ? target.checked : target.value;
         const name = target.name;
         let state = this.state;
-        state[name] = parseFloat(value);
+        state[name] = value !== "" ? parseFloat(value) : "";
 
         this.setState(state);
     }
@@ -143,12 +143,6 @@ class GameEditor extends Component {
             game.large_image_url = this.props.image_two;
         }
 
-        if (!this.state.score || this.state.score === '') {
-            errorMessage += 'Score must be filled in. ';
-        } else {
-            game.score = this.state.score;
-        }
-
         if (!this.state.currently_playing || this.state.currently_playing === '') {
             errorMessage += 'Playing must be filled in. ';
         } else {
@@ -171,6 +165,7 @@ class GameEditor extends Component {
         game.time_to_beat = this.state.time_to_beat;
         game.review = JSON.stringify(content);
         game.htmlContent = htmlContent;
+        game.score = this.state.score;
 
         if (!this.state.description || this.state.description === '') {
             errorMessage += 'Description must be filled in. ';
