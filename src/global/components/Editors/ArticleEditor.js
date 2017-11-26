@@ -131,10 +131,10 @@ class ArticleEditor extends Component {
             article.thumbnail_url = this.props.image_one;
         }
 
-        if (this.state.summaryEditable) {
-            article.summary = this.state.summary;
+        if (this.state.summary === '' || this.state.summary === null) {
+            errorMessage += "Need summary. "
         } else {
-            article.summary = this.props.summary;
+            article.summary = this.state.summary;
         }
 
         if (!htmlContent || htmlContent === '') {

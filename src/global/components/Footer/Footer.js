@@ -16,9 +16,9 @@ class Footer extends Component {
                 <img src="/images/delta.png" className="footer-image"/>
                 <div className="footer-text">DAVIS BANKS</div>
                 <div className="icons">
-                    <a href=""><FaEnvelopeO/></a>
-                    <a href=""><FaLinkedinSquare/></a>
-                    <a href=""><FaGithubSquare/></a>
+                    <a href="mailto:davis.e.banks+website@gmail.com"><FaEnvelopeO/></a>
+                    <a href="https://www.linkedin.com/in/davis-banks-318ab437" target="_blank"><FaLinkedinSquare/></a>
+                    <a href="https://github.com/debanks" target="_blank"><FaGithubSquare/></a>
                 </div>
             </div>
         )
