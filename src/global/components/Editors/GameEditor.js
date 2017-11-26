@@ -165,7 +165,7 @@ class GameEditor extends Component {
         game.time_to_beat = this.state.time_to_beat;
         game.review = JSON.stringify(content);
         game.htmlContent = htmlContent;
-        game.score = this.state.score;
+        game.score = this.state.score > 0 ? this.state.score : null;
 
         if (!this.state.description || this.state.description === '') {
             errorMessage += 'Description must be filled in. ';
