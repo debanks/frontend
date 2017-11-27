@@ -32,6 +32,7 @@ class ArticleEditor extends Component {
             title: this.props.article ? this.props.article.title : "",
             summary: this.props.article ? this.props.article.summary : "",
             content: this.props.article ? this.props.article.content : "",
+            tag: this.props.article ? this.props.article.tag : "general",
             featured: this.props.article ? this.props.article.featured : 0,
             thumbnail_url: this.props.article ? this.props.article.thumbnail_url : "",
             item: this.props.article && this.props.article.item_type ? this.props.article.item_type + '_' + this.props.article.item_id : '',
@@ -111,7 +112,7 @@ class ArticleEditor extends Component {
         event.preventDefault();
 
         let errorMessage = "";
-        let article = {featured: this.state.featured, delisted: this.state.delisted};
+        let article = {featured: this.state.featured, tag: this.state.tag};
         let content = this.state.contentState;
         let htmlContent = draftToHtml(content);
 
@@ -258,6 +259,14 @@ class ArticleEditor extends Component {
                                 <img className="art-image" src={this.props.image_one}/>}
                             </div>
 
+                            <div className="input-container">
+                                <label>Tag</label>
+                                <FormControl componentClass="select" name="tag" onChange={this.handleInputChange}>
+                                    <option value="general" selected={this.state.tag === "general"}>General</option>
+                                    <option value="game" selected={this.state.tag === "game"}>Game</option>
+                                    <option value="project" selected={this.state.tag === "project"}>Project</option>
+                                </FormControl>
+                            </div>
 
                             <div className="input-container">
                                 <label>Featured</label>
