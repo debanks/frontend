@@ -32,7 +32,7 @@ class ArticleEditor extends Component {
             title: this.props.article ? this.props.article.title : "",
             summary: this.props.article ? this.props.article.summary : "",
             content: this.props.article ? this.props.article.content : "",
-            tag: this.props.article ? this.props.article.tag : "general",
+            tag: this.props.article ? this.props.article.tag : "General",
             featured: this.props.article ? this.props.article.featured : 0,
             thumbnail_url: this.props.article ? this.props.article.thumbnail_url : "",
             item: this.props.article && this.props.article.item_type ? this.props.article.item_type + '_' + this.props.article.item_id : '',
@@ -262,9 +262,9 @@ class ArticleEditor extends Component {
                             <div className="input-container">
                                 <label>Tag</label>
                                 <FormControl componentClass="select" name="tag" onChange={this.handleInputChange}>
-                                    <option value="general" selected={this.state.tag === "general"}>General</option>
-                                    <option value="game" selected={this.state.tag === "game"}>Game</option>
-                                    <option value="project" selected={this.state.tag === "project"}>Project</option>
+                                    <option value="General" selected={this.state.tag === "General"}>General</option>
+                                    <option value="Game" selected={this.state.tag === "Game"}>Game</option>
+                                    <option value="Project" selected={this.state.tag === "Project"}>Project</option>
                                 </FormControl>
                             </div>
 
